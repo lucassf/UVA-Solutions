@@ -28,7 +28,7 @@ void prevlesser(int cur,string a) {
 			prevlesser(cur + 1, a);
 			break;
 		}
-	}//cout << a << endl;
+	}
 }
 
 void nextlarger(int cur,string a) {
@@ -51,7 +51,6 @@ void nextlarger(int cur,string a) {
 					if (a[k]<t)t=a[k],idx = k;
 				aux = a[idx], a[idx] = a[j], a[j] = aux;
 			}
-			//cout << a << endl;
 			nextlarger(cur + 1, a );
 			break;
 		}
